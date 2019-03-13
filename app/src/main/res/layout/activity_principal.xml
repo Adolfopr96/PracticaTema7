@@ -2,39 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layou1_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Principal">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_tittle_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TITULO"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+        android:text="@string/main_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp" />
 
     <LinearLayout
+        android:id="@+id/layout2_main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Spinner
-            android:id="@+id/spinner2"
+            android:id="@+id/sp_category_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:entries="@array/array_categorys"
             android:visibility="visible" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/img1_main"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:contentDescription="@string/desc_img1_main"
+            app:srcCompat="@drawable/img1_main" />
     </LinearLayout>
 
- <!--   <android.support.v7.widget.CardView
+    <!--   <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/colorPrimary">
@@ -63,11 +68,12 @@
         android:layout_gravity="bottom|right"
         android:contentDescription="TODO" />-->
     <RelativeLayout
+        android:id="@+id/layout3_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ListView
-            android:id="@+id/card_listView"
+            android:id="@+id/lv_cards_main"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:divider="@null"
@@ -76,7 +82,7 @@
         </ListView>
 
         <android.support.design.widget.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+            android:id="@+id/img2_main"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -87,6 +93,7 @@
             android:clickable="true"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:focusable="true"
+            app:backgroundTint="@color/colorPrimary"
             app:elevation="6dp"
             app:pressedTranslationZ="12dp" />
     </RelativeLayout>

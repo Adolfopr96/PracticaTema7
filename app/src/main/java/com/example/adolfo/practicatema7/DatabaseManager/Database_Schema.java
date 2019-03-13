@@ -9,12 +9,12 @@ public class Database_Schema {
         public static final String TABLE_NAME = "LUGARES";
 
         public static final String COLUMN_NAME_ID = "id";
-        public static final String COLUMN_NAME_NOMBRE = "nombre";
-        public static final String COLUMN_NAME_LATITUD = "latitud";
-        public static final String COLUMN_NAME_LONGITUD = "longitud";
-        public static final String COLUMN_NAME_COMENTARIOS = "comentarios";
-        public static final String COLUMN_NAME_VALORACION = "valoracion";
-        public static final String COLUMN_NAME_CATEGORIA = "categoria";
+        public static final String COLUMN_NAME_NOMBRE = "name";
+        public static final String COLUMN_NAME_LATITUD = "latitude";
+        public static final String COLUMN_NAME_LONGITUD = "longitude";
+        public static final String COLUMN_NAME_COMENTARIOS = "comments";
+        public static final String COLUMN_NAME_VALORACION = "rating";
+        public static final String COLUMN_NAME_CATEGORIA = "category";
 
         public static final String COLUMN_TYPE_ID = "INTEGER";
         public static final String COLUMN_TYPE_NOMBRE = "TEXT";
