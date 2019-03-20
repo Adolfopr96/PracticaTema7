@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layou1_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/tv_tittle_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/layout2_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sp_category_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img1_main"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/desc_img1_main"
+            app:srcCompat="@drawable/img1_main" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/layout3_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_cards_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:focusable="true"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/img2_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@mipmap/ic_launcher_round"
+            android:clickable="true"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:focusable="true"
+            app:backgroundTint="@color/colorPrimary"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaTema7</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_title">MY SITES</string>
+    <string name="desc_img1_main">" Image of a ball of the black world"</string>
+    <string name="category1">BUFFET</string>
+    <string name="category2">PUBS</string>
+    <string name="category3">DISCOTHES</string>
+    <string name="category4">RESTAURANT</string>
+    <string name="category5">COFFES</string>
+    <string name="default_category">Choose a category</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="name_site">Name</string>
+    <string name="name_category">Category</string>
+    <string name="latitud_site">Latitude</string>
+    <string name="longitud_site">Longitude</string>
+    <string name="rating_site">Rating</string>
+    <string name="comment_site">Comments</string>
+    <string name="item_menu_save">Save</string>
+    <string name="toas_correct_insert">" Insert correctly done"</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

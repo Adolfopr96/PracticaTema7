@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PracticaTema7</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="toas_correct_insert">" Insérer correctement fait"</string>
+    <string name="item_menu_save">sauvegarder</string>
+    <string name="comment_site">Commentaires</string>
+    <string name="rating_site">Évaluations</string>
+    <string name="longitud_site">Longueur</string>
+    <string name="latitud_site">Latitude</string>
+    <string name="name_category">Catégorie</string>
+    <string name="name_site">nom</string>
+    <string name="edit">Éditer</string>
+    <string name="delete">Supprimer</string>
+    <string name="default_category">"Choisissez une catégorie "</string>
+    <string name="category5">COFFES</string>
+    <string name="category4">Restaurant</string>
+    <string name="category3">"Les clubs "</string>
+    <string name="category2">PUBS</string>
+    <string name="category1">BARS</string>
+    <string name="desc_img1_main">Image d\'une boule du monde noire</string>
+    <string name="main_title">"Mes places "</string>
+    <string name="action_settings">Paramètres</string>
+</resources>
