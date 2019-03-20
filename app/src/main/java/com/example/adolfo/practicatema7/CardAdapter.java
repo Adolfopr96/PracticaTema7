@@ -12,20 +12,18 @@ import com.example.adolfo.practicatema7.DatabaseManager.Sites;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.adolfo.practicatema7.R.id.rb_main;
-
 public class CardAdapter extends ArrayAdapter {
-    private List<Sites> listado = new ArrayList<>();
+    private List <Sites> listado = new ArrayList<>();
 
     static class CardViewHolder {
-        TextView line1;
-        TextView line2;
-        TextView line3;
+        TextView line;
+        RatingBar line2;
     }
 
     public CardAdapter(Context context, int textViewResourceId) {
         super(context, textViewResourceId);
     }
+
 
     public void add(Sites object) {
         listado.add(object);
@@ -42,22 +40,27 @@ public class CardAdapter extends ArrayAdapter {
         return this.listado.get(index);
     }
 
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View row = convertView;
+        CardViewHolder viewHolder;
         if (row == null) {
             LayoutInflater inflater = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             row = inflater.inflate(R.layout.list_item_card, parent, false);
-            CardViewHolder viewHolder = new CardViewHolder();
-            viewHolder.line1 = row.findViewById(R.id.line1);
-            Sites s = getItem(position);
-            viewHolder.line1.setText(s.getNameSite());
-            RatingBar rb;
-            rb = row.findViewById(R.id.rb_main);
-            rb.setRating(s.getRatingSite());
+
+            viewHolder = new CardViewHolder();
+            viewHolder.line = row.findViewById(R.id.line1);
+            viewHolder.line2 = row.findViewById(R.id.rb_main);
+
             row.setTag(viewHolder);
+        } else {
+            viewHolder = (CardViewHolder) row.getTag();
         }
+        Sites l = getItem(position);
+
+        viewHolder.line.setText(l.getNameSite());
+        viewHolder.line2.setRating(l.getRatingSite());
         return row;
     }
-
 }

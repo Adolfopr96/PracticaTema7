@@ -10,12 +10,14 @@
     <string name="category4">RESTAURANTES</string>
     <string name="category5">COSHOPS</string>
     <string name="default_category">Elija una categoría</string>
+    <string name="delete">Borrar</string>
+    <string name="edit">Editar</string>
 
     <string-array name="array_categorys">
         <item>@string/default_category</item>
         <item>@string/category1</item>
         <item>@string/category2</item>
-        <item>@string/category3</item>
+        <item>@string/category3</item>e
         <item>@string/category4</item>
         <item>@string/category5</item>
     </string-array>
@@ -29,6 +31,7 @@
 
     <string name="item_menu_save">Guardar</string>
     <string name="toas_correct_insert">Insert en la base de datos realizado correctamente</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>

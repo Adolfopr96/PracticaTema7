@@ -14,7 +14,7 @@ public class App {
     public static int SALIDAINFORMACION;
     public static int action;
     public static Sites activeSite;
-    public static int SpinnerMap;
+    public static int sp_map;
     public static List<String> getCategories(Context context) {
         List<String> list = new ArrayList<String>();
         list.add(context.getResources().getString(R.string.category1));
